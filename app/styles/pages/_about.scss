@@ -1,0 +1,218 @@
+
+
+//----------------------------------*\
+// Main Title and break
+//----------------------------------*/
+
+.aContain{
+	@include span-columns(12);
+	@include pad(15px default 10px default);
+	h1{
+		text-align: center;
+    		color: rgba(30, 74, 107, 0.86);
+
+    		//---------------------------*\
+    		// Mobile
+    		//---------------------------*/
+    			@include media($mB-p)  {
+    			@include htl;
+    		    }
+    		//land
+    		    @include media($mB-l)  {
+    		
+    		    }
+
+    		//---------------------------*\
+    		// Tablet
+    		//---------------------------*/
+    		    @include media($tB-p) {
+    		   	@include htl;
+    		    }
+    		//land
+    		    @include media($tB-l) {
+    		    @include htel;
+    		    }
+    		&:last-child{
+    			@include htb;
+    		}
+	}
+
+
+	.aTitle{
+	@include span-columns(12);
+
+	}
+
+	.aTitleTwo{
+		h1{
+    		color: rgba(30, 74, 107, 0.86);
+    		//---------------------------*\
+    		// Mobile
+    		//---------------------------*/
+    			@include media($mB-p)  {
+    			@include htl;
+    		    }
+    		//land
+    		    @include media($mB-l)  {
+    		
+    		    }
+
+    		//---------------------------*\
+    		// Tablet
+    		//---------------------------*/
+    		    @include media($tB-p) {
+    		   	@include htl;
+    		    }
+    		//land
+    		    @include media($tB-l) {
+    		    @include htel;
+    		    }
+		}
+	}
+
+	.break{
+	@include span-columns(8);
+	@include shift(2);
+	@include clearfix;
+	@include pad(default default 3% default);
+	//box-shadow: 0px 3px 5px lighten($c2, 5);
+	border-radius: 5px; 
+	background: darken($c2, 5);	
+	}
+
+	.aTitleTwo{
+	@include span-columns(12);
+	}
+}
+
+
+//	color: lighten(#CCCC99, 10);
+
+//----------------------------------*\
+// Icons
+//----------------------------------*/
+
+.aIconContain{
+	@include span-columns(12);
+	@include pad(35px default default default);
+	@include clearfix;
+	margin-top: 25px;
+	background: #229955;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top: 5px solid rgba(30, 74, 107, 0.86);  
+	//border bottom in MQ
+
+	.aIcon{
+		text-align: center;
+		color: rgba(255, 255, 255, 0.70);
+	}
+
+	h2{
+		@include pad(8px default 5px default);
+		text-align: center;
+		color: rgba(30, 74, 107, 0.86);
+		@include titleTextN;
+		margin-top: -25px;
+	}
+
+	
+	.aIconBox{
+		li{
+		@include vr-baseline(1.75rem,2rem);
+		@include pad(10px 10px default default);
+		@include span-columns(12);
+		@include bodyText;
+		color: #5db08c;
+		//color: darken(#254949, 5);
+		}
+
+	}
+
+}
+
+
+
+
+
+	.visualID{
+	@include span-columns(3);
+	height: 175px;
+	}
+
+	
+	.webDesign{
+	@include span-columns(3);
+	height: 175px;
+	}
+
+
+	.mobileDesign{
+	@include span-columns(3);
+	height: 175px;
+
+	}
+
+
+
+	.development{
+	@include span-columns(3);
+	height: 175px;
+}
+
+
+
+
+
+//Vertical tab padding
+
+.vertical-tabs-container .vertical-tab-content{
+	@include pad(5px 3px default default);
+}
+
+
+.vertical-tabs-container{
+	margin-bottom: 65px;
+}
+
+  
+.aIconContain{
+
+	
+	
+	//---------------------------*\
+	// Mobile
+	//---------------------------*/
+		@include media($mB-p)  {
+		border-bottom: 5px solid rgba(30, 74, 107, 0.86);
+	    }
+	//land
+	    @include media($mB-l)  {
+		border-bottom: 5px solid rgba(30, 74, 107, 0.86);
+	    }
+	
+	
+	//---------------------------*\
+	// Tablet
+	//---------------------------*/
+	    @include media($tB-p) {
+	   border-bottom: 5px solid rgba(30, 74, 107, 0.86);
+	    }
+	//land
+	    @include media($tB-l) {
+	    border-bottom: 5px solid rgba(30, 74, 107, 0.86);
+	    }
+	
+	
+	//---------------------------*\
+	// Desktop
+	//---------------------------*/
+	    @include media($dT) {
+	border-bottom: 0px solid rgba(30, 74, 107, 0.86);
+	    }
+	    @include media($dT-l) {
+	border-bottom: 0px solid rgba(30, 74, 107, 0.86);
+	    }
+	
+	
+}

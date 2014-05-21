@@ -1,0 +1,121 @@
+//boxes colors and heights
+
+
+*{
+
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+//.boxy{border:1px solid red;}
+.box{border:1px solid red;}
+
+//Colors
+
+$c1: #316C7E;
+$c2: #27ae60;
+$c3: #EB9532;
+$c4: #f1c40f;
+
+//gray
+$cg: #161616;
+$cg1: #2B2B2B;
+$headGray: #5F5F5F;
+
+//.boxy{border: 1px red solid;}
+
+
+
+.content .box{
+
+	height: 100%;
+
+
+
+}
+
+
+	.box1{
+		min-height: 850px;
+		//background-color: rgba(0, 128, 128, 0.61);
+		background-color: $c1;
+		//background: url('../images/bg1.jpg');
+		//background-size: cover;
+		
+		
+		//----------------------------------*\
+		// Mobile
+		//----------------------------------*/
+			@include media($mB-p)  {
+			height: 100%;
+		    }
+		//land
+		    @include media($mB-l)  {
+			height: 100%;
+		    }
+		
+		
+		//----------------------------------*\
+		// Tablet
+		//----------------------------------*/
+		    @include media($tB-p) {
+		   	height: 100%;
+		    }
+		//land
+		    @include media($tB-l) {
+		    height: 100%;
+		    }
+		
+		
+		//----------------------------------*\
+		// Desktop
+		//----------------------------------*/
+		    @include media($dT) {
+			height: 100vh !important;
+		    }
+		    @include media($dT-l) {
+			height: 100vh;
+		    }
+		
+		
+
+	}
+
+	
+	.box2{
+		background: $c2;
+		min-height: 900px;
+
+	}
+	
+	.box3{
+		background: $c3;
+		//background: #E26A6A;
+		//background: #D64541;
+		//background: #eb5055;
+
+	}
+	
+	.box4{
+		background: $c4;
+		min-height: 500px;
+
+	}
+	
+	.box5{
+
+	}
+	
+	.box6{
+
+	}
+
+
+
+

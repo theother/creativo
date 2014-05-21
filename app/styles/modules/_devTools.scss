@@ -1,0 +1,77 @@
+#devTools {
+	width: 50px;
+	height: 30px;
+	background: pink;
+	position: fixed;
+	left:0%;
+	bottom: 0%;
+
+}
+
+		@include media($mBB-p)  {
+					#devTools:after {
+			  content: 'mBB-p';
+			  font-size: 16px;
+			  font-weight: bold;
+			}
+	    }
+	
+	//----------------------------------*\
+	// Mobile
+	//----------------------------------*/
+		@include media($mB-p)  {
+					#devTools:after {
+			  content: 'mB-p';
+			  font-size: 16px;
+			  font-weight: bold;
+			}
+	    }
+	//land
+	    @include media($mB-l)  {
+					#devTools:after {
+			  content: 'mB-l';
+			  font-size: 16px;
+			  font-weight: bold;
+			}	
+	    }
+	
+	
+	//----------------------------------*\
+	// Tablet
+	//----------------------------------*/
+	    @include media($tB-p) {
+					#devTools:after {
+			  content: 'tB-p';
+			  font-size: 16px;
+			  font-weight: bold;
+			}	   
+	    }
+	//land
+	    @include media($tB-l) {
+					#devTools:after {
+			  content: 'tB-l';
+			  font-size: 16px;
+			  font-weight: bold;
+			}	    
+	    }
+	
+	
+	//----------------------------------*\
+	// Desktop
+	//----------------------------------*/
+	    @include media($dT) {
+					#devTools:after {
+			  content: 'dT';
+			  font-size: 16px;
+			  font-weight: bold;
+			}
+	    }
+	    @include media($dT-l) {
+					#devTools:after {
+			  content: 'dT-l';
+			  font-size: 16px;
+			  font-weight: bold;
+			}
+	    }
+	
+	

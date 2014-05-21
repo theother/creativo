@@ -1,0 +1,12 @@
+{
+  "name": "gulp",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.6.2",
+    "jquery": "~1.10.2",
+    "bourbon": "~3.1.8",
+    "Buttons": "*",
+    "Shifter": "~3.0.2"
+  },
+  "devDependencies": {}
+}

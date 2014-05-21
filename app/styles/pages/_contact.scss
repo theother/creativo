@@ -1,0 +1,657 @@
+
+//----------------------------------*\
+// Space Ship
+//----------------------------------*/
+
+.circleOne{
+		background: $c4;
+	border: 30px solid white;
+	border-radius: 50%;
+	@include pad(default default default default);
+	z-index: 1000;
+	img{
+		border-radius: 50%;
+	}
+}
+
+
+.circleContain{
+	margin-top: 50px;
+}
+
+
+.circleOne{
+	@include span-columns(5);
+	@include shift(.5);
+	background: $c4;
+	border: 30px solid white;
+	border-radius: 50%;
+	@include pad(default default default default);
+	z-index: 1000;
+	img{
+		border-radius: 50%;
+	}
+}
+
+
+.phoneNum{
+	padding-left: 40px;
+	//border: 10px solid fade-out($c1, .15); 
+	border-bottom: 5px solid white;
+	background: fade-out($c1, .1);
+	z-index: 1;
+
+	h1{
+		color: white;
+		letter-spacing: .05em;
+		@include bodyText;
+			span{
+			font-size: 1.55em;
+			letter-spacing: .20em;
+		}
+	}
+
+}
+.emailAddy{
+	padding-left: 40px;
+	//border: 10px solid fade-out($c2, .15); 
+	border-top: 5px solid white; 
+	background: fade-out($c2, .1);
+	z-index: 1;
+	h1{
+		@include bodyText;
+		color: white;
+		letter-spacing: .020em;
+		span{
+			font-size: 1.55em;
+		}
+	}
+}
+
+
+.phoneemailC{
+	@include clearfix;
+	z-index: -1;
+}
+
+.borderContainer{
+	@include span-columns(6.75);
+	@include shift(-.75);
+	margin-top: -2%;
+	border: 10px solid white;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	z-index: 1;
+
+
+}
+
+.phoneButton{
+	@include span-columns(2);
+	@include shift(4);
+	border: 10px solid white; 
+	font-size: 6em;
+	text-align: center;
+	margin-bottom: 1.1%;
+	padding-bottom: 10px;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	background: fade-out($c1, .1);
+	z-index: 10; 
+
+}
+
+.emailButton{
+	@include span-columns(2);
+	@include shift(4);
+	border: 10px solid white;
+	font-size: 6em;
+	text-align: center;
+	padding-top: 5px;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	margin-top: -1%;
+	background: fade-out($c2, .1);
+	z-index: 10;
+
+
+}
+
+
+.buttonCEWrappter{
+	@include outer-container;
+	@include clearfix;
+
+	.eButton{
+		@include span-columns(4);
+		text-align: center;
+	}
+
+	.pButton{
+		@include span-columns(4);
+		text-align: center;
+	}
+
+	.arrowWrap{
+		@include span-columns(4);
+		.lArrow{
+			@include span-columns(3);
+			@include triangle(2em, gray, left);
+		}
+		.rArrow{
+			@include span-columns(3);
+			@include triangle(2em, gray, right);
+		}
+		.arrowLine{
+			@include span-columns(6);
+			background: green;
+			height: 10px;
+		}
+	}
+
+
+}
+
+
+
+
+
+//----------------------------------*\
+// Music Box
+//----------------------------------*/
+/*
+.musicWrapper{
+	@include outer-container;	
+	height: 300px;
+	background: white;
+	border-radius: 50%;
+}
+
+
+.circle{
+	@include span-columns(8);
+	@include shift(2);
+	display: block;
+	position: relative;
+	border: 1px solid red;
+	height: 115px;
+	border: 20px solid #555;
+	margin-top: 115px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	border-bottom-left-radius: 50px;  
+	border-bottom-right-radius: 50px;
+	border-top: 0px; 
+	z-index: 100;
+	overflow: hidden;
+
+	
+}
+
+	#musicWrapper{
+		@include span-columns(10);
+		@include shift(2);
+		position: relative;
+		display: block;
+		border: 1px solid red;
+
+	}
+
+	.bar {
+		position: absolute;
+		background: #666;
+		margin-left: 1.5px;
+		bottom: 1px;
+		height: 50px;
+		width: 21.8px;
+		border-top-left-radius: 25px;
+		border-top-right-radius: 25px;
+		z-index: 1;
+	}
+
+	.bar:first-child{ 
+	border-bottom-left-radius: 25px; 
+	}
+
+	.bar:last-child{
+	border-bottom-right-radius: 25px;
+	}	
+		*/
+
+
+
+//----------------------------------*\
+// Form - on contactForm scss
+//----------------------------------*/
+
+
+
+
+/*.focus{
+			@extend .modal-window;
+			//@include transition (background 0.5s $ease-out-sine, color 0.25s $ease-out-sine, font-size 0.25s $ease-out-back);
+			@include htb;
+			border-color: darken(#444, 10);
+			background: #444;
+			color: white;
+
+			background: #444;
+			border-radius: 8px;
+
+			label{
+								@include transition (all 2.0s $ease-out-sine);
+				text-align: center;
+				font-size: 1em;
+
+			}
+
+}*/
+
+   @include media($mBB-p)  {
+    //Header
+	.header{display: none;}
+
+
+    //left header
+            .hTitle{display: none;}
+            .pageNameHome{ display: none;}
+            .smallHeadLogo{display: none;}
+            .word{display: none;}
+
+    //Nav
+            .breadcrumb{display: none;} 
+    
+    //Contact Us
+            .modal{display: none;}
+
+        }
+
+    	@include media($mB-p)  {
+    	.header{display: block;}	
+    
+        }
+    	@include media($mB-l)  {
+    	.header{display: block;}	
+    
+        }
+
+
+.circleOne{
+
+	//---------------------------*\
+	// Mobile
+	//---------------------------*/
+		@include media($mB-p)  {
+		@include span-columns(11);
+		@include shift(.5);
+		margin-top: 30px;
+	    }
+	//land
+	    @include media($mB-l)  {
+		@include span-columns(8);
+		@include shift(2);
+	    }
+	
+	
+	//---------------------------*\
+	// Tablet
+	//---------------------------*/
+	    @include media($tB-p) {
+	   	
+	    }
+	//land
+	    @include media($tB-l) {
+	    @include span-columns(5);
+		@include shift(.5);
+	    }
+	
+	
+	//---------------------------*\
+	// Desktop
+	//---------------------------*/
+	    @include media($dT) {
+		@include span-columns(5);
+		@include shift(0);
+	    }
+	    @include media($dT-l) {
+		@include span-columns(5);
+		@include shift(0);
+	    }
+	
+	
+}
+
+.phoneButton, .emailButton {
+
+	
+	
+	//---------------------------*\
+	// Mobile
+	//---------------------------*/
+		@include media($mB-p)  {
+		display: none;
+	    }
+	//land
+	    @include media($mB-l)  {
+		display: none;
+	    }
+	
+	
+	//---------------------------*\
+	// Tablet
+	//---------------------------*/
+	    @include media($tB-p) {
+	   	display: none;
+	    }
+	//land
+	    @include media($tB-l) {
+	    display: block;
+	    }
+	
+	
+	//---------------------------*\
+	// Desktop
+	//---------------------------*/
+	    @include media($dT) {
+		display: block;
+	    }
+	    @include media($dT-l) {
+		display: block;
+	    }
+	
+	
+}
+
+
+.borderContainer{
+
+	
+	
+	//---------------------------*\
+	// Mobile
+	//---------------------------*/
+		@include media($mB-p)  {
+		@include span-columns(10);
+		@include shift(1);
+		margin-top: 20px;
+	    }
+	//land
+	    @include media($mB-l)  {
+	
+	    }
+	
+	
+	//---------------------------*\
+	// Tablet
+	//---------------------------*/
+	    @include media($tB-p) {
+	   
+	    }
+	//land
+	    @include media($tB-l) {
+	    
+	    }
+	
+	
+	//---------------------------*\
+	// Desktop
+	//---------------------------*/
+	    @include media($dT) {
+	
+	    }
+	    @include media($dT-l) {
+	
+	    }
+	
+	
+}
+
+
+
+
+
+//Mobile Icon on phone and email
+
+
+
+	
+	
+//---------------------------*\
+// Mobile
+//---------------------------*/
+	@include media($mB-p)  {
+
+	.borderContainer{
+		@include span-columns(10);
+		@include shift(1);
+		border-radius: 10px;
+		margin-top: 45px;
+	}	
+	.phoneNum{
+		@include clearfix;
+		@include pad(0px 0px 0px 0px);
+	}
+
+	.contactEye{
+		font-size: 3em;
+		color: fade-out(white, .1);
+		border-right: 10px solid darken($c1, 10);
+		margin-right: 10px;
+
+	}
+	.contactPhone{
+		@include span-columns(4 of 4);
+		height: 100%;
+		min-height: 40px;
+		h1{
+			letter-spacing: 100%;
+			text-align: center;
+		}
+	}
+	
+	.emailAddy{
+		@include clearfix;
+		@include pad(0px 0px 0px 0px);
+		@extend .contactPhone;
+	}
+
+
+    }
+//land
+    @include media($mB-l)  {
+
+    }
+
+
+//---------------------------*\
+// Tablet
+//---------------------------*/
+    @include media($tB-p) {
+   
+    }
+//land
+    @include media($tB-l) {
+    
+    .contactEye{display: none;}
+
+    }
+
+
+//---------------------------*\
+// Desktop
+//---------------------------*/
+    @include media($dT) {
+	.contactEye{display: none;}
+    }
+    @include media($dT-l) {
+	.contactEye{display: none;}
+    }
+
+
+
+
+
+
+
+//
+//Form
+//
+
+
+#desktopForm{
+
+	
+	
+	//---------------------------*\
+	// Mobile
+	//---------------------------*/
+		@include media($mB-p)  {
+		display: none;
+	    }
+	//land
+	    @include media($mB-l)  {
+		display: none;
+	    }
+	
+	
+	//---------------------------*\
+	// Tablet
+	//---------------------------*/
+	    @include media($tB-p) {
+	   	display: none;
+	    }
+	//land
+	    @include media($tB-l) {
+	    display: none;
+	    }
+	
+	
+	//---------------------------*\
+	// Desktop
+	//---------------------------*/
+	    @include media($dT) {
+		display: block;
+	    }
+	    @include media($dT-l) {
+		display: block;
+	    }
+	
+	
+}
+
+
+#mobileForm{
+
+	
+	
+	//---------------------------*\
+	// Mobile
+	//---------------------------*/
+		@include media($mB-p)  {
+		display: block;
+		   h2{
+				@include span-columns(12);
+				@include shift(0);
+			}
+			#text_fieldMb, #text_field2Mb, #text_field3Mb{
+				@include shift(0);
+			}
+			label{
+				@include titleTextB;
+				@include span-columns(12);
+				@include shift(0);
+			}	
+			#text_areaMb{
+				@include span-columns(12);
+				@include shift(0);
+				height: 150px;
+			}
+	    }
+	//land
+	    @include media($mB-l)  {
+		display: block;
+	    }
+	
+	
+	//---------------------------*\
+	// Tablet
+	//---------------------------*/
+	    @include media($tB-p) {
+	   display: block;
+		   h2{
+				@include span-columns(12);
+				@include shift(0);
+			}
+			#text_fieldMb, #text_field2Mb, #text_field3Mb{
+				@include shift(1);
+			}
+			label{
+				@include titleTextB;
+				@include span-columns(12);
+				@include shift(1);
+			}	
+			#text_areaMb{
+				@include span-columns(12);
+				@include shift(1);
+				height: 150px;
+			}
+	    }
+	//land
+	    @include media($tB-l) {
+	    display: block;
+	    }
+	
+	
+	//---------------------------*\
+	// Desktop
+	//---------------------------*/
+	    @include media($dT) {
+		display: none;
+	    }
+	    @include media($dT-l) {
+		display: none;
+	    }
+	
+
+
+
+
+}
+
+
+//Mobile BB
+
+
+	//---------------------------*\
+	// Mobile
+	//---------------------------*/
+		@include media($mBB-p)  {
+			.circleTwo{
+			display: none;
+		}
+		.circleOne{
+			@include span-columns(11);
+			@include shift(.5);
+			margin-bottom: 25px;
+		}
+
+	    }
+	
+	//---------------------------*\
+	// Desktop
+	//---------------------------*/
+	    @include media($dT) {
+			.circleTwo{
+			display: block;
+		}
+		.circleOne{
+			@include span-columns(5);
+			@include shift(.5);
+			margin-bottom: 25px;
+		}
+	    }
+	    @include media($dT-l) {
+	
+	    }
+	
+	

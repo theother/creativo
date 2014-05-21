@@ -1,0 +1,603 @@
+//----------------------------------*\
+// Global
+//----------------------------------*/
+
+$textShadow: rgb(23, 23, 23) -1px 1px 0px, rgb(24, 24, 24) -2px 2px 0px, rgb(25, 25, 25) -3px 3px 0px, rgb(26, 26, 26) -4px 4px 0px, rgb(27, 27, 27) -5px 5px 0px, rgb(27, 27, 27) -6px 6px 0px, rgb(28, 28, 28) -7px 7px 0px, rgb(29, 29, 29) -8px 8px 0px, rgb(30, 30, 30) -9px 9px 0px, rgb(31, 31, 31) -10px 10px 0px, rgb(31, 31, 31) -11px 11px 0px, rgb(32, 32, 32) -12px 12px 0px, rgb(33, 33, 33) -13px 13px 0px, rgb(34, 34, 34) -14px 14px 0px, rgb(35, 35, 35) -15px 15px 0px, rgb(35, 35, 35) -16px 16px 0px, rgb(36, 36, 36) -17px 17px 0px, rgb(37, 37, 37) -18px 18px 0px, rgb(38, 38, 38) -19px 19px 0px, rgb(39, 39, 39) -20px 20px 0px, rgb(39, 39, 39) -21px 21px 0px, rgb(40, 40, 40) -22px 22px 0px, rgb(41, 41, 41) -23px 23px 0px, rgb(42, 42, 42) -24px 24px 0px, rgb(43, 43, 43) -25px 25px 0px, rgb(43, 43, 43) -26px 26px 0px, rgb(44, 44, 44) -27px 27px 0px, rgb(45, 45, 45) -28px 28px 0px, rgb(46, 46, 46) -29px 29px 0px, rgb(47, 47, 47) -30px 30px 0px;
+
+
+
+//----------------------------------*\
+// Parallax Main
+//----------------------------------*/
+
+#parallax {
+	margin-bottom: 0px;
+	position: relative;
+	overflow: hidden;
+}
+#parallax h3 {
+	@include titleTextB;
+	color: $c2;
+	font-size: 90px;
+	text-align: center;
+	margin: 30px 0 0 0;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	line-height: 80px;
+
+}
+#parallax #parallaxbg {
+	position: relative;
+	height: 300px;
+
+	width: 100%;
+	background-image: url("../images/px1c.jpg");
+//	background-image: url("../images/parallaxbg.png");
+}
+#parallaxbg{
+	background-size: cover; 
+//	background-size: 100% auto; 
+	background-position:0 100% ;
+}
+#parallaxbg .top {
+	height: 10px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	background-image: url("../images/parallax_shadow_top.png");
+}
+#parallaxbg .bottom {
+	height: 10px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background-image: url("../images/parallax_shadow_bottom.png");
+}
+
+
+
+
+
+#parallaxTwo {
+	margin-bottom: 0px;
+	position: relative;
+	overflow: hidden;
+}
+#parallaxTwo h3 {
+	font-size: 80px;
+	text-align: center;
+	margin: -40px 0 0 0;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	line-height: 80px;
+}
+#parallaxTwo #parallaxbgTwo {
+	position: relative;
+	height: 300px;
+	width: 100%;
+	background-image: url("../images/px3.jpg");
+//	background-image: url("../images/parallaxbg.png");
+}
+#parallaxbgTwo{
+	background-size: cover; 
+//	background-size: 100% auto; 
+	background-position:0% 100% ;
+}
+#parallaxbgTwo .top {
+	height: 10px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	background-image: url("../images/parallax_shadow_top.png");
+}
+#parallaxbgTwo .bottom {
+	height: 10px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background-image: url("../images/parallax_shadow_bottom.png");
+}
+
+
+
+#parallaxThree {
+	margin-bottom: 0px;
+	position: relative;
+	overflow: hidden;
+}
+#parallaxThree h3 {
+	font-size: 80px;
+	text-align: center;
+	margin: -40px 0 0 0;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	line-height: 80px;
+}
+#parallaxThree #parallaxbgThree {
+	position: relative;
+	height: 300px;
+	width: 100%;
+
+	background-image: url("../images/px2c.jpg");
+}
+#parallaxbgThree{
+	background-size: cover; 
+//	background-size: 100% auto; 
+	background-position:10% 100% ;
+}
+#parallaxbgThree .top {
+	height: 10px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	background-image: url("../images/parallax_shadow_top.png");
+}
+#parallaxbgThree .bottom {
+	height: 10px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background-image: url("../images/parallax_shadow_bottom.png");
+}
+
+
+
+.underline{
+	text-decoration: underline;
+	text-shadow:     0 1px 0 hsl(174,5%,80%),
+	                 0 2px 0 hsl(174,5%,75%),
+	                 0 3px 0 hsl(174,5%,70%),
+	                 0 4px 0 hsl(174,5%,66%),
+	                 0 5px 0 hsl(174,5%,64%),
+	                 0 6px 0 hsl(174,5%,62%),
+	                 0 7px 0 hsl(174,5%,61%),
+	                 0 8px 0 hsl(174,5%,60%),
+	
+	                 0 0 5px rgba(0,0,0,.05),
+	                0 1px 3px rgba(0,0,0,.2),
+	                0 3px 5px rgba(0,0,0,.2),
+	               0 5px 10px rgba(0,0,0,.2),
+	              0 10px 10px rgba(0,0,0,.2),
+	              0 20px 20px rgba(0,0,0,.3);
+}
+
+
+
+
+
+
+//----------------------------------*\
+// PX1
+//----------------------------------*/
+
+
+//----------------------------*\
+// Mobile
+//----------------------------*/
+
+	@include media($mBB-p)  {
+	#parallax{display: none;}
+
+		.mobilePageShadowAbout{	
+		@include span-columns(12);
+		@include clearfix;
+		background: lighten($cg, 10);
+		min-height: 110px;
+		text-align: center;
+
+			h1{
+				@include pad(default default 25px default);
+				@include titleTextB;
+				letter-spacing: 18px;
+				color: $c2;
+				text-shadow: $textShadow;
+			}
+
+		}
+	}
+
+
+	@include media($mB-p)  {
+	#parallax{display: none;}
+
+		.mobilePageShadowAbout{	
+		@include span-columns(12);
+		@include clearfix;
+		background: lighten($cg, 10);
+		min-height: 110px;
+		text-align: center;
+
+			h1{
+				@include pad(default default 25px default);
+				@include titleTextB;
+				letter-spacing: 18px;
+				color: $c2;
+				text-shadow: $textShadow;
+			}
+
+		}
+	}
+
+
+//land
+	@include media($mB-l)  {
+	#parallax{display: none;}
+
+		.mobilePageShadowAbout{	
+		@include span-columns(12);
+		@include clearfix;
+		background: lighten($cg, 10);
+		min-height: 110px;
+		text-align: center;
+
+			h1{
+				@include pad(default default 25px default);
+				@include titleTextB;
+				letter-spacing: 18px;
+				color: $c2;
+				text-shadow: $textShadow;
+			}
+
+		}
+	}
+
+
+//--------------------------*\
+// Tablet
+//--------------------------*/
+	@include media($tB-p)  {
+	#parallax{display: none;}
+
+		.mobilePageShadowAbout{	
+		@include span-columns(12);
+		@include clearfix;
+		background: lighten($cg, 10);
+		min-height: 110px;
+		text-align: center;
+
+			h1{
+				@include pad(default default 25px default);
+				@include titleTextB;
+				letter-spacing: 18px;
+				color: $c2;
+				text-shadow: $textShadow;
+			}
+
+		}
+	}
+
+//land
+	@include media($tB-l)  {
+	#parallax{display: none;}
+
+		.mobilePageShadowAbout{	
+		@include span-columns(12);
+		@include clearfix;
+		background: lighten($cg, 10);
+		min-height: 110px;
+		text-align: center;
+
+			h1{
+				@include pad(default default 25px default);
+				@include titleTextB;
+				letter-spacing: 18px;
+				color: $c2;
+				text-shadow: $textShadow;
+			}
+
+		}
+	}
+
+
+//----------------------------*\
+// Desktop
+//----------------------------*/
+    @include media($dT) {
+		#parallax{display: block}
+		.mobilePageShadowAbout{display: none;}
+    }
+    @include media($dT) {
+		#parallax{display: block}
+		.mobilePageShadowAbout{display: none;}
+
+    }
+
+
+
+
+
+
+
+
+
+//----------------------------------*\
+// PX2 - Process
+//----------------------------------*/
+
+
+//----------------------------*\
+// Mobile
+//----------------------------*/
+
+	@include media($mBB-p)  {
+	#parallaxbgTwo{display: none;}
+
+		.mobilePageShadowProcess{	
+		@include span-columns(12);
+		@include clearfix;
+		background: lighten($cg, 10);
+		min-height: 110px;
+		text-align: center;
+
+			h1{
+				@include pad(default default 25px default);
+				@include titleTextB;
+				letter-spacing: 18px;
+				color: $c3;
+				text-shadow: $textShadow;
+			}
+
+		}
+	}
+
+	@include media($mB-p)  {
+	#parallaxbgTwo{display: none;}
+
+		.mobilePageShadowProcess{	
+		@include span-columns(12);
+		@include clearfix;
+		background: lighten($cg, 10);
+		min-height: 110px;
+		text-align: center;
+
+			h1{
+				@include pad(default default 25px default);
+				@include titleTextB;
+				letter-spacing: 18px;
+				color: $c3;
+				text-shadow: $textShadow;
+			}
+
+		}
+	}
+
+
+//land
+	@include media($mB-l)  {
+	#parallaxbgTwo{display: none;}
+
+		.mobilePageShadowProcess{	
+		@include span-columns(12);
+		@include clearfix;
+		background: lighten($cg, 10);
+		min-height: 110px;
+		text-align: center;
+
+			h1{
+				@include pad(default default 25px default);
+				@include titleTextB;
+				letter-spacing: 18px;
+				color: $c3;
+				text-shadow: $textShadow;
+			}
+
+		}
+	}
+
+
+//--------------------------*\
+// Tablet
+//--------------------------*/
+	@include media($tB-p)  {
+	#parallaxbgTwo{display: none;}
+
+		.mobilePageShadowProcess{	
+		@include span-columns(12);
+		@include clearfix;
+		background: lighten($cg, 10);
+		min-height: 110px;
+		text-align: center;
+
+			h1{
+				@include pad(default default 25px default);
+				@include titleTextB;
+				letter-spacing: 18px;
+				color: $c3;
+				text-shadow: $textShadow;
+			}
+
+		}
+	}
+
+//land
+	@include media($tB-l)  {
+	#parallaxbgTwo{display: none;}
+
+		.mobilePageShadowProcess{	
+		@include span-columns(12);
+		@include clearfix;
+		background: lighten($cg, 10);
+		min-height: 110px;
+		text-align: center;
+
+			h1{
+				@include pad(default default 25px default);
+				@include titleTextB;
+				letter-spacing: 18px;
+				color: $c3;
+				text-shadow: $textShadow;
+			}
+
+		}
+	}
+
+
+//----------------------------*\
+// Desktop
+//----------------------------*/
+    @include media($dT) {
+		#parallaxbgTwo{display: block}
+		.mobilePageShadowProcess{display: none;}
+    }
+    @include media($dT) {
+		#parallaxbgTwo{display: block}
+		.mobilePageShadowProcess{display: none;}
+
+    }
+
+
+
+
+
+
+
+//----------------------------------*\
+// PX3 - Contact
+//----------------------------------*/
+
+
+//----------------------------*\
+// Mobile
+//----------------------------*/
+	@include media($mBB-p)  {
+	#parallaxbgThree{display: none;}
+
+		.mobilePageShadowContact{	
+		@include span-columns(12);
+		@include clearfix;
+		background: lighten($cg, 10);
+		min-height: 110px;
+		text-align: center;
+
+			h1{
+				@include pad(default default 25px default);
+				@include titleTextB;
+				letter-spacing: 18px;
+				color: $c4;
+				text-shadow: $textShadow;
+			}
+
+		}
+	}
+
+
+	@include media($mB-p)  {
+	#parallaxbgThree{display: none;}
+
+		.mobilePageShadowContact{	
+		@include span-columns(12);
+		@include clearfix;
+		background: lighten($cg, 10);
+		min-height: 110px;
+		text-align: center;
+
+			h1{
+				@include pad(default default 25px default);
+				@include titleTextB;
+				letter-spacing: 18px;
+				color: $c4;
+				text-shadow: $textShadow;
+			}
+
+		}
+	}
+
+
+//land
+	@include media($mB-l)  {
+	#parallaxbgThree{display: none;}
+
+		.mobilePageShadowContact{	
+		@include span-columns(12);
+		@include clearfix;
+		background: lighten($cg, 10);
+		min-height: 110px;
+		text-align: center;
+
+			h1{
+				@include pad(default default 25px default);
+				@include titleTextB;
+				letter-spacing: 18px;
+				color: $c4;
+				text-shadow: $textShadow;
+			}
+
+		}
+	}
+
+
+//--------------------------*\
+// Tablet
+//--------------------------*/
+	@include media($tB-p)  {
+	#parallaxbgThree{display: none;}
+
+		.mobilePageShadowContact{	
+		@include span-columns(12);
+		@include clearfix;
+		background: lighten($cg, 10);
+		min-height: 110px;
+		text-align: center;
+
+			h1{
+				@include pad(default default 25px default);
+				@include titleTextB;
+				letter-spacing: 18px;
+				color: $c4;
+				text-shadow: $textShadow;
+			}
+
+		}
+	}
+
+//land
+	@include media($tB-l)  {
+	#parallaxbgThree{display: none;}
+
+		.mobilePageShadowContact{	
+		@include span-columns(12);
+		@include clearfix;
+		background: lighten($cg, 10);
+		min-height: 110px;
+		text-align: center;
+
+			h1{
+				@include pad(default default 25px default);
+				@include titleTextB;
+				letter-spacing: 18px;
+				color: $c4;
+				text-shadow: $textShadow;
+			}
+
+		}
+	}
+
+
+//----------------------------*\
+// Desktop
+//----------------------------*/
+    @include media($dT) {
+		#parallaxbgThree{display: block}
+		.mobilePageShadowContact{display: none;}
+    }
+    @include media($dT) {
+		#parallaxbgThree{display: block}
+		.mobilePageShadowContact{display: none;}
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+

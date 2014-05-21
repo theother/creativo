@@ -1,0 +1,395 @@
+
+
+.split{
+	@include htel;
+  -webkit-transform: translate3d(0, 0, 0);
+  font-size:24px;
+  line-height:36px;
+  color:#dedede;
+  margin:80px auto;
+  visibility:hidden;
+}
+
+.split div{
+  @include background-image( radial-gradient(80% 30%, circle cover, #cecece, darken(#cecece, 5%)) );
+  border-radius:2px;
+  padding:0 8px;
+  margin:4px 0;
+  -webkit-font-smoothing: antialiased;
+	-moz-font-smoothing:antialiased;
+  color:#555;
+  font-size: 1.1em;
+  font-weight:bold; 
+}
+
+
+div#quote{
+	text-align: center;
+}
+
+
+
+
+//Creativo Concepts
+#mTitle{
+		text-align: center;
+		@include htl;
+		font-size: 5em;
+		color: white;
+		margin-top: 3%;
+
+
+}
+
+
+
+//Web Agency
+#mTitle2{
+	text-align: center;
+		@include htel;
+		font-size: 4em;
+		color: white;
+
+}
+
+//Based in Oconomowoc
+#mTitle3{
+	text-align: center;
+		@include htl;
+		font-size: 4em;
+		color: white;	
+}
+
+
+//Icons
+
+
+//iconOne
+
+.iconHomeWrapper{
+margin-top: 7%;
+}
+
+
+.iconOne{
+	@include span-columns(4);
+	height: 300px;
+
+		.imgWrapper{
+		@include span-columns(4 of 4);
+
+		img{
+	    display: block; 
+	    margin-left: auto; 
+	    margin-right: auto;
+		}
+
+		h2{
+			margin-top: 10px;
+			text-align: center;
+			font-size: 3em;
+			color: white;
+			text-transform: uppercase;
+			@include htel;			
+		}
+	}
+}
+
+.iconTwo{
+	@include span-columns(4);
+	height: 300px;
+
+		.imgWrapper{
+		@include span-columns(4 of 4);
+
+		img{
+	    display: block; 
+	    margin-left: auto; 
+	    margin-right: auto;
+		}
+
+		h2{
+			margin-top: 10px;
+			text-align: center;
+			font-size: 3em;
+			text-transform: uppercase;
+			color: white;
+			text-transform: uppercase;
+			@include htel;
+		}
+	}
+}
+
+.iconThree{
+	@include span-columns(4);
+	height: 300px;
+
+		.imgWrapper{
+		@include span-columns(4 of 4);
+
+		img{
+	    display: block; 
+	    margin-left: auto; 
+	    margin-right: auto;
+		}
+
+		h2{
+			margin-top: 10px;
+			text-align: center;
+			font-size: 3em;
+			color: white;
+			text-transform: uppercase;
+			@include htel;
+		}
+	}
+}
+
+
+
+
+.modal2 .btn2{
+	height: 100px;
+	border: 5px solid white;
+	margin-bottom: 75px;
+	color: white;
+	&:hover {
+		background: white;
+		color: $c1;
+
+	}
+}
+
+
+.modal2 label {
+	font-size: 3.1em !important;
+	@include bodyText;
+
+
+}
+
+
+//c2a space
+.modal2Container{
+display: block;
+margin-top: 20%;
+}
+
+
+
+
+//----------------------------------*\
+//----------------------------------*\
+// Mobile-page
+//----------------------------------*/
+//----------------------------------*/
+
+#mobileHome{
+	.hr1{
+		@include span-columns(6);
+		@include shift(2.82);
+	}
+
+	.hr2{
+		@include span-columns(10);
+		@include shift(1);
+	}
+
+}
+
+.mobileTitleContain{
+	
+	.mobileHomeTitle{
+	text-align: center;
+		h1{
+			@include htl;
+			color: white;
+		}
+	}
+
+}
+
+.mobileTagContain{
+	.mobileTagLine{
+		@include span-columns(12);
+		text-align: center;	
+		h2{
+			@include pad(default default 5px default);
+			@include htl;
+			font-size: 3em;
+			color: white;
+			span{
+				text-transform: uppercase;
+				@include htb;
+			}
+		}
+	}	
+
+	.mobileTagLineSpan{
+		@include span-columns(12);
+		h2{
+			@include htb;
+			text-align: center;
+			text-transform: uppercase;
+			line-height: 80%; 
+			color: $cg1;
+			
+		}
+	}
+
+	.mobileTagLocation{
+		@include span-columns(12);
+		text-align: center;
+		h2{
+			@include pad(5px default default default);
+			@include htl;		
+			font-size: 3em;
+			color: white; 
+		}
+	}
+}
+
+
+
+
+
+
+.mobileIconHomeWrapper{
+	 @include clearfix;
+
+	.mobileIconOne{
+		@include span-columns(5.8);
+		text-align: center;
+		
+		h2{
+			font-size: 2em;
+			@include titleTextB;
+			letter-spacing: 2px;
+			color: $cg1;
+
+
+			//----------------------------------*\
+			// Tablet
+			//----------------------------------*/
+			    @include media($tB-p) {
+			   	font-size: 3em;
+
+			    }
+			//land
+			    @include media($tB-l) {
+			    font-size: 3.5em;
+			    }
+		}
+	}
+		.mobileIconTwo{
+		@include span-columns(12);
+		text-align: center;
+		h2{
+			font-size: 2em;
+			@include titleTextB;
+			letter-spacing: 2px;
+
+			//----------------------------------*\
+			// Tablet
+			//----------------------------------*/
+			    @include media($tB-p) {
+			   	font-size: 3em;
+			    }
+			//land
+			    @include media($tB-l) {
+			    font-size: 3.5em;
+			    }
+		}
+	}
+		.mobileIconThree{
+		@include span-columns(5.9);
+		text-align: center;
+		@include titleTextB;
+		letter-spacing: 2px;
+
+		h2{
+			font-size: 2em;
+			//----------------------------------*\
+			// Tablet
+			//----------------------------------*/
+			    @include media($tB-p) {
+			   	font-size: 3em;
+			    }
+			//land
+			    @include media($tB-l) {
+			    font-size: 3.5em;
+			    }
+		}		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+//Breakpoints
+
+
+#magHome{
+
+	
+	//----------------------------------*\
+	// Mobile
+	//----------------------------------*/
+		@include media($mBB-p)  {
+		display: none;
+	    }
+		@include media($mB-p)  {
+		display: none;
+	    }
+	//land
+	    @include media($mB-l)  {
+		display: none;
+	    }
+	
+	
+	//----------------------------------*\
+	// Tablet
+	//----------------------------------*/
+	    @include media($tB-p) {
+	   	display: none;
+	    }
+	//land
+	    @include media($tB-l) {
+	    display: none;
+	    }
+	
+	
+	//----------------------------------*\
+	// Desktop
+	//----------------------------------*/
+	    @include media($dT) {
+		display: block;
+	    }
+	    @include media($dT-l) {
+		display: block;
+	    }
+	
+	
+}
+ 
+
+
+	//----------------------------------*\
+	// Desktop-Mobile
+	//----------------------------------*/
+	    @include media($dT) {
+		#mobileHome{
+			display: none;
+		}
+	    }
+	    @include media($dT-l) {
+		#mobileHome{
+			display: none;
+		}
+	    }

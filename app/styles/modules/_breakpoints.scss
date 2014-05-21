@@ -1,0 +1,139 @@
+//Bp's for nav/header on _mobileNav
+
+
+@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+
+}
+
+
+// all portrait
+$iphone-portrait: em(200);       
+$samsung-galaxy-portrait: em(380); 
+ 
+$kindle-portrait: em(600);
+$ipad-portrait: em(768);
+ 
+ 
+// all landscape
+$iphone-landscape: em(480); 
+$iphone-5-landscape: em(568);
+$samsung-galaxy-landscape: em(685);
+ 
+
+//original
+//$ipad-landscape: em(1024);
+
+$ipad-landscape: em(690);
+$kindle-landscape: em(1024);
+ 
+$desktop-size: em(1200);
+$largedesktop-size: em(1600);
+ 
+ 
+//breakpoints - refills
+ 
+//mBB-p is for sending mobile key board screen
+$mBB-p: new-breakpoint(min-width 0em orientation landscape 12); 
+$mB-p: new-breakpoint(min-width $iphone-portrait orientation portrait 12);
+$mB-l: new-breakpoint(min-width $iphone-landscape orientation landscape 12);
+
+
+$tB-p: new-breakpoint(min-width $kindle-portrait orientation portrait 12);
+$tB-l: new-breakpoint(min-width $ipad-landscape orientation landscape 12);
+ 
+ 
+$dT: new-breakpoint(min-width $desktop-size 12);
+$dT-l: new-breakpoint(min-width $largedesktop-size 12);
+
+
+
+//Custom Breakpoints
+
+.box1{
+
+}
+
+.box2{
+.aIconContain{
+	//border: 1px solid red;
+	
+	//container pad
+	@include media(30em){
+	@include pad(10px default 10px default);
+	}
+	@include media(48em){
+	@include pad(15px default 105px default);
+	}
+
+	> div {
+	//border: 1px solid red;
+	//background: rgba(30, 74, 107, 0.86);
+    @include media(00em)  {
+      @include span-columns(6);
+      @include omega(2n);
+      height: 125px;
+    }
+    @include media(48em)  {
+      @include omega-reset(2n); // Reset previous @include omega()
+      @include span-columns(3);
+      @include omega(4n);
+      height: 175px;
+    }
+	}
+
+}
+//Accord p text
+
+p{
+	@include media(0em)  {
+    font-size: $base-font-size * 1;
+    }
+    @include media(48em)  {
+    font-size: $base-font-size * 1.2;
+    }
+    @include media(64em) {
+    font-size: $base-font-size * 1.5;
+    }
+    @include media(80em) {
+    font-size: $base-font-size * 1.8;
+    }
+}
+}
+
+.box3{
+	.grid {
+	  > div {
+	    @include media(480px)  {
+	      @include span-columns(12);
+	      @include omega(1n);
+	    }
+	    @include media(767px)  {
+	    	@include omega-reset(1n);
+	    	@include span-columns(6);
+	    	@include omega(2n);
+		    	&:last-child{
+		    	@include span-columns(6 of 6);
+	    	}
+	    }
+
+	    @include media((min-width: 768px) and (max-width: 979px))  {
+	    	@include omega-reset(2n);
+	    	@include span-columns(2.4 of 12);
+	    	@include omega(5n);
+		    	&:last-child{
+		    	@include span-columns(2.4 of 12);
+	    	}
+	    }
+
+
+		}
+	 }
+}
+
+.box4{
+
+}
+
+
+
+

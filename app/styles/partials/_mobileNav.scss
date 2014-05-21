@@ -1,0 +1,236 @@
+//Breakpoints for nav
+
+
+
+
+//nav Postion
+.mobileNav {
+    float: left;
+    z-index: 100;
+    margin-top: -45px;
+    position: fixed;
+    right: 5px;
+    @include bodyText;
+}
+
+
+
+#mobileHeadTitle{
+    @include span-columns(12);
+    margin-top: -35px;
+    opacity: 0;
+    h1{
+        @include htel;
+        text-align: center;
+        letter-spacing: 10px; 
+        //font-size: 2.5em;
+    }
+        //---------------------------*\
+        // Desktop
+        //---------------------------*/
+            @include media($dT) {
+            display: none;
+            }
+            @include media($dT-l) {
+            display: none;
+            }    
+}
+
+#mobileTellyFlash{
+    height: 45px;
+    width: 45px;
+    font-size: 2.5em;
+    background: #316C7E;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    border-top-left-radius: 5px; 
+    .icon-phone{
+    color: #fff;
+    }
+
+}
+
+
+
+
+//
+//Media Q
+//
+@include media($mB-p){
+    .header{background: #316C7E;}
+}
+
+.header{
+
+    
+    
+//----------------------------------*\
+// Mobile
+//----------------------------------*/
+
+
+
+
+
+        @include media($mB-p)  {
+    //Header
+
+
+
+    //left header
+            .hTitle{display: none;}
+            .pageNameHome{ display: none;}
+            .smallHeadLogo{display: none;}
+            .word{display: none;}
+            .pageIndicate{
+                margin-left: 5px;
+                margin-top: -10px;
+                width: 60px; 
+                height: 50px;
+                
+            }
+            .word{
+                height: 50px;
+                top: 3px;
+            }
+            span{
+                margin-left: -30px;
+                font-size: 1.5em;  
+            }
+            
+
+    //Nav
+            .breadcrumb{display: none;} 
+    
+    //Contact Us
+            .modal{display: none;}
+
+    //Center Logo Width
+            .centerModal{width: 55px}
+
+    //Telly
+            #mobileTellyFlash{display: block;}
+
+
+
+        }
+//land
+        @include media($mB-l)  {
+         
+    //left header
+            .hTitle{display: none;}
+            .smallHeadLogo{display: none;}
+            .pageNameHome{ display: none;}
+            .word{display: none;}
+            .pageIndicate{
+                margin-top: -10px;
+                width: 60px; 
+                height: 40px;}
+            .word{height: 50px;}
+            span.hicon{
+                margin-left: -20px;
+            }
+            
+
+    //Nav
+            .breadcrumb{display: none;}    
+    
+
+    //Contact Us
+            .modal{display: none;}
+
+    //Telly
+            #mobileTellyFlash{display: block;}
+
+
+
+    }
+
+
+
+
+
+    
+    
+    //----------------------------------*\
+    // Tablet
+    //----------------------------------*/
+        @include media($tB-p) {
+
+        //Telly
+            #mobileTellyFlash{display: none;}
+       
+        }
+    //land
+        @include media($tB-l) {
+
+        //Telly
+            #mobileTellyFlash{display: none;}
+        }
+    
+    
+    //----------------------------------*\
+    // Desktop
+    //----------------------------------*/
+        @include media($dT) {
+
+
+    //mobileNav
+            .mobileNav{display: none;}
+            .smallHeadLogo{display: block;}
+            .word{display: block;}
+    //left header
+            .hTitle{
+                display: block;
+                text-transform: uppercase;
+                margin-left: -15px;
+                letter-spacing: 14px;
+                margin-top: 3px;  
+
+            }
+            .pageNameHome{ display: block;}
+            .pageIndicate{
+                width: 329px; 
+                height: 35px;
+                margin-top: 15px;
+                
+            }
+            .word{
+                height: 35px;
+                width: 60px; 
+                left: 295px;
+                border-left: 1px solid white;
+            }
+            span.hicon{
+                margin-left: -20px;
+            }
+            
+
+    //Nav
+            .breadcrumb{
+                display: inline-block;
+                margin-top: -31px;
+                height: 35px;
+            } 
+    
+    //Contact Us
+            .modal{display: block;}
+
+    //Center Logo Width
+            .centerModal{width: 255px}
+
+    //Telly
+            #mobileTellyFlash{display: none;}
+        }
+        @include media($dT-l) {
+    
+        }
+    
+    
+}
+
+
+
+
+

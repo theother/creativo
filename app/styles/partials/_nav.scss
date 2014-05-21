@@ -1,0 +1,68 @@
+//Breadcrumb nav
+
+
+nav {
+	float: left;
+	z-index: 100;
+	margin-top: -31px;
+	position: fixed;
+	right: 50px;
+	@include bodyText;
+	@include clearfix;
+}
+
+.breadcrumb{
+	a{
+		width: 85px;
+		text-align: center;
+	}
+}
+
+.current{
+	background: white !important;
+	color: rgb(141, 141, 141) !important;
+}
+
+//Tween to new class (black to white nav)
+.whiteNav{
+	a, a:last-child{
+		color: #5F5F5F;
+
+		&:hover{
+			background: rgb(141, 141, 141);
+			color: white;
+		}
+	}
+	
+	a, a:last-child{
+		border: 1px solid #585757;
+	}
+
+	.current{
+	background: rgb(141, 141, 141)  !important;
+	color: white !important;
+}
+}
+
+.borderLeftNav{
+	border-left: 2px solid rgb(141, 141, 141) !important;
+}
+
+//Header c2a Button
+
+.c2aButton{
+	button{
+		position: fixed;
+		z-index: 1000;
+		width: 300px;
+		height: 55px;
+		font-size: 2em;
+		@include bodyText;
+	}
+}
+
+.alignCenter{
+	@include outer-container;
+	width: 300px;
+}
+

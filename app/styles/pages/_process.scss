@@ -1,0 +1,190 @@
+.pTitleContain{
+	@include span-columns (12);
+
+
+	.pMainTitle{
+		@include span-columns (12);
+		@include htn;
+		text-align: center;
+		color: darken(desaturate(adjust_hue(#EB9532, 165), 31), 30);
+		margin-top: 15px;
+		span{
+			@include htb;
+		}
+	}
+
+	.pBreak{
+	@include triangle(4em, darken($c3, 12), up);
+	@include span-columns(11.5);
+	@include shift(.25);
+	margin-top: -10px;
+	}
+
+	.pSecTitle{
+		@include span-columns(12);
+		@include htl;
+		color:  $cg1;
+		text-align: center;
+	}
+}
+
+
+.downArrow{
+	@include triangle(4em, darken($c3, 12), down);
+	@include span-columns(12);
+
+
+}
+
+
+.icon{
+	@include pad(10px default default default);
+	font-size: 4em;
+	text-align: center;
+	color: adjust_hue(#EB9532, 331);
+	margin-bottom: -3%;
+}
+
+.pMTitle{
+	text-align: center;
+	h2{
+	@include bodyText;
+	text-transform: uppercase;
+	}
+
+}
+
+
+.pMTitle{
+	h2{
+	@include media($mB-p)  {
+    font-size: $base-font-size * 2;
+    }
+    @include media($tB-p)  {
+    font-size: $base-font-size * 2.8;
+    }
+    @include media($tB-l) {
+    font-size: $base-font-size * 2.8;
+    }
+    @include media($dT) {
+    font-size: $base-font-size * 3.2;
+    }
+}
+}
+
+
+
+
+.downIconArrowC{
+	@include clearfix;
+	@include pad(15px default default default);
+}
+.downIconArrow{
+	@include triangle(5em, #C0392B, down);
+	@include clearfix;
+	@include outer-container;
+
+}
+
+.pDescript{
+	@include pad(10px default 10px default);
+	margin-top: -20px;
+	//min-height: 320px;
+	text-align: center;
+	color: $cg1;
+	border-radius: 4px;
+	background: rgba(235, 60, 50, 0.79);
+	box-shadow: 0px 3px 10px 0px rgba(50, 50, 50, 0.68);
+	p{
+		@include htl;
+		font-size: 1.15em;
+		line-height: 1.15em;
+		word-spacing: .5px;
+
+		//---------------------------*\
+		// Mobile
+		//---------------------------*/
+			@include media($mB-p)  {
+			@include pad(default 0px default default);
+			font-size: 1em;
+		    }
+		//land
+		    @include media($mB-l)  {
+		
+		    }
+		//---------------------------*\
+		// Tablet
+		//---------------------------*/
+		    @include media($tB-p) {
+		   	font-size: 1.5em;
+		   } 
+	}
+}
+
+.lastProcess{
+	margin-bottom: 80px;
+}
+.sideArrowT1{
+	@include triangle(5em, #C0392B, right);
+
+	@include shift(12);
+	position: relative;
+	top: -10px;
+	margin-bottom: -60px;
+}
+
+.sideArrowB1{
+	@include triangle(5em, #C0392B, right);
+	@include shift(12);
+	position: relative;
+	margin-top: -60px;
+}
+
+.numberBox{
+	@include span-columns(1);
+	margin-bottom: -30px;
+	background: $c3;
+	color: #444;
+	border-radius: 3px;
+	h2{	@include titleTextB;}
+	
+
+	
+	
+	//---------------------------*\
+	// Mobile
+	//---------------------------*/
+		@include media($mB-p)  {
+		display: none;
+	    }
+	//land
+	    @include media($mB-l)  {
+		display: none;
+	    }
+	
+	
+	//---------------------------*\
+	// Tablet
+	//---------------------------*/
+	    @include media($tB-p) {
+	   	display: none;
+	    }
+	//land
+	    @include media($tB-l) {
+	    display: block;
+	    }
+	
+	
+	//---------------------------*\
+	// Desktop
+	//---------------------------*/
+	    @include media($dT) {
+		display: block;
+	    }
+	    @include media($dT-l) {
+		display: block;
+	    }
+	
+	
+}
+

@@ -1,0 +1,317 @@
+//----------------------------------*\
+// Global for 
+//----------------------------------*/
+
+//placholder text on click disabreas
+
+.placeholderD{
+::-webkit-input-placeholder{
+color: lighten(#444, 15);
+} 
+:focus::-webkit-input-placeholder{
+ text-indent: -999px
+}
+::-moz-placeholder{
+color: #ccc;
+font-style:italic;
+}
+:focus::-moz-placeholder{
+ text-indent: -999px
+}
+}
+
+
+
+
+
+//----------------------------------*\
+// Form
+//----------------------------------*/
+
+form{
+	h2{
+		@include span-columns(6);
+		@include shift(3);
+		@include pad(15px 15px default default);
+		border-radius: 8px;
+		text-align: center;
+		color: white;
+		background: darken(#444, 5);
+		margin-bottom: 20px;
+	}
+
+.buttonContain{
+	@include outer-container;
+	border: 1px solid red;
+	text-align: center;
+
+	.button{
+		width: 225px;
+		height: 75px;
+	}
+}
+
+}
+
+fieldset{
+	margin-top: 70px;
+	border-radius: 10px;
+	.peContain{
+		@include outer-container;
+	}
+	.formPhone{
+		@include span-columns(6);
+		@include pad(20px default default default);
+		@include htb;
+		@extend .placeholderD;
+		margin-top: -30px;
+		font-size: 2em;
+		border-radius: 8px;
+		text-align: center;
+		
+		label{
+		@include titleTextB;
+		letter-spacing: 2px;
+		}
+
+
+		
+	}
+
+	.formEmail{
+	@extend .formPhone;
+	@extend .placeholderD;
+	}
+
+	.formName{
+		@include span-columns(6);
+		@include pad(20px default default default);
+		@include htb;
+		@extend .placeholderD;
+		@include shift(3);
+		font-size: 2em;
+		border-radius: 8px;
+		text-align: center;
+
+			label{
+			@include titleTextB;
+			letter-spacing: 2px;
+			}
+
+			#{$all-text-inputs} {
+				text-align: center;
+			}
+
+	}
+
+
+
+
+	.extraContain{
+		@include outer-container;
+	}
+}
+
+	#text_field{
+		@include bodyText;
+		@include transition (background 0.75s $ease-out-sine, color 0.25s $ease-out-sine, font-size 0.25s $ease-out-back);
+		background: fade-out(white, .1);
+		color:  #444;
+		&:focus{
+			//@extend .modal-window;
+			//@include transition (background 0.75s $ease-out-sine, color 0.25s $ease-out-sine, font-size 0.25s $ease-out-back);
+			@include bodyText;
+			border-color: darken(#444, 10);
+			background: #444;
+			color: lighten(#444, 55);
+			font-size: 1.75em;
+			background: #444;
+			border-radius: 8px; 
+		}
+	}
+	#text_field2{
+		@extend #text_field;
+	}
+	#text_field3{
+		@extend #text_field;
+	}
+
+.focus{
+			@include transition (all 0.5s $ease-out-sine);
+			@include span-columns(2 of 2);
+			color: lighten(#444, 35);
+
+			label{
+				@include transition (all 0.5s $ease-out-sine);
+				background: #444;
+				color: lighten(#444, 65);
+				border-radius: 5px;
+				@include span-columns(1 of 2);
+
+			}
+
+}
+
+.nameFocus{
+			@include transition (all 0.5s $ease-out-sine);
+			color: lighten(#444, 35);
+
+			label{
+				@include transition (background 0.5s $ease-out-sine);
+				@include span-columns(1 of 2);
+				@include shift(.5);
+				background: #444;
+				color: lighten(#444, 65);
+				border-radius: 5px;
+
+			}
+
+}
+
+//----------------------------------*\
+// Message Field
+//----------------------------------*/
+
+#text_areaTitle{
+	@extend .placeholderD;
+	@include pad(20px default default default);
+	width: 100%;
+	text-align: center;
+	font-size: 2em;
+    border-radius: 8px;
+    margin-top: -20px;
+
+	label{
+		@include titleTextB;
+		letter-spacing: 2px;
+	}
+}
+
+#text_area{
+	@include bodyText;
+	@include transition (background 0.75s $ease-out-sine, color 0.25s $ease-out-sine, font-size 0.25s $ease-out-back);
+	border-radius: 5px;
+	font-size: .75em;
+	height: 125px;
+	background: fade-out(white, .1);
+	color:  #444;
+
+	&:focus{
+		@include bodyText;
+		@include transition (background 0.5s $ease-out-sine);
+		border-color: darken(#444, 10);
+		color: lighten(#444, 55);
+		font-size: 1em;
+		background-color: #444444;
+		border-radius: 8px;
+		height: 175px; 
+	}
+}
+
+.messageFocus{
+	@extend .nameFocus;
+	label{
+		padding-bottom: 2px;
+	}
+}
+
+
+
+//----------------------------------*\
+// Form Modal
+//----------------------------------*/
+
+
+.modal .modal-inner h1{color:white; text-align: center;}
+
+.modal{
+	fieldset{
+		background: #444;
+		border-color: darken(#444, 10)
+	}
+}
+
+
+
+.modalWrapper{
+	@include outer-container;
+
+	.formTitleM{
+		@include span-columns(4);
+		@include titleTextB;
+		@include pad(5px 5px 10px 5px);
+		background: #444;
+		border-bottom-right-radius: 22px;
+		border-bottom-left-radius: 2px;
+		border-top-left-radius: 22px;
+		border-top-right-radius: 2px;
+
+		span{
+			color: $c2;
+		}
+	}
+
+	hr{
+		@include span-columns(12);
+		border: 5px solid #444;
+		margin-top: -20px;
+		border-bottom-right-radius: 2px;
+		border-bottom-left-radius: 2px;
+		border-top-left-radius: 12px;
+		border-top-right-radius: 12px;
+	}
+
+	#modalFeildForm{
+		background: green;
+	}
+
+	.formNameM{
+		@include span-columns(1 of 3);
+		@extend .placeholderD;
+		
+		color: lighten($c1, 5);
+			#{$all-text-inputs} {
+				@include bodyText;
+				text-align: center;
+				color: #444;
+			}
+			label{
+				@include span-columns(1 of 2);
+				@include shift(0);
+				@include titleTextB;
+				padding-bottom: 6px;
+				text-align: center;
+				font-size: 2.25em;
+				letter-spacing: 1px;
+			}
+
+			input{
+				@include transition (all .5s ease-in-out);
+				border-top: 5px solid fade-out($c1, .25);
+				border-radius: 5px;
+				&:focus{
+					@include transition (background .5s ease-in-out, font-size .35s ease-in-out, border-color .25s ease-in-out);
+					text-align: left;
+					border-color: darken(#444, 10);
+					background: #444;
+					color: lighten(#444, 55);
+					font-size: 1.75em;
+
+					.modalWrapper .formNameM label{
+						font-size: 100px;
+					}
+				}
+			}
+		
+
+	}
+	.formPhoneM{
+		@extend .formNameM;
+	}
+	.formEmailM{
+		@extend .formNameM;
+	}
+
+}
+
+
